@@ -10,7 +10,7 @@ const organizers = [
   },
   {
     name: "Profa. Dra Janisi Sales Aragão",
-    role: "Engenheira de Pesca/ profa do IFCE campus Juazeiro do Norte",
+    role: "Engenheira de Pesca/ Docente IFCE campus Juazeiro do Norte",
     foto: "./professores/janisi.jpeg",
   },
   {
@@ -20,7 +20,7 @@ const organizers = [
   },
   {
     name: "Prof. Dr. Basílio Silva Neto",
-    role: "prof do IFCE campus Juazeiro do Norte",
+    role: "Docente IFCE campus Juazeiro do Norte",
     foto: "./professores/basilio.jpeg",
   },
   {
@@ -35,12 +35,12 @@ const organizers = [
   },
   {
     name: "Felipe Pereira",
-    role: "Graduando - UFCA",
+    role: "Graduando Universidade em Federal do Cariri UFCA",
     foto: "./professores/felipe.jpeg",
   },
     {
     name: "Suelem Albuquerque ",
-    role: "Graduanda - UFCA",
+      role: "Graduanda Universidade em Federal do Cariri UFCA",
     foto: "./professores/suellen.jpeg",
   },
 ]
