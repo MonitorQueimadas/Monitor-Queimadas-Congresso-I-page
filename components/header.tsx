@@ -62,9 +62,13 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-3">
             <Button asChild className="bg-secondary hover:bg-secondary/90 text-secondary-foreground">
+<<<<<<< HEAD
               <Link href={'https://www.even3.com.br/1-congresso-conecta-chapada-do-araripe-737737/'} target="_blank">
                 Inscreva-se
               </Link>
+=======
+              <Link href="#inscricao">Inscreva-se</Link>
+>>>>>>> origin/main
             </Button>
           </div>
 
@@ -98,7 +102,11 @@ export function Header() {
             ))}
             <div className="pt-2 px-4">
               <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground">
+<<<<<<< HEAD
                 <Link href={'https://www.even3.com.br/1-congresso-conecta-chapada-do-araripe-737737/'} target="_blank">
+=======
+                <Link href="#inscricao" onClick={() => setIsOpen(false)}>
+>>>>>>> origin/main
                   Inscreva-se
                 </Link>
               </Button>

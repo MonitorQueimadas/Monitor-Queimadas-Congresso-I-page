@@ -33,16 +33,23 @@ const organizers = [
     role: "Universidade Federal do Cariri UFCA",
     foto: "./professores/francisco.jpeg",
   },
+<<<<<<< HEAD
   {
+=======
+    {
+>>>>>>> origin/main
     name: "Felipe Pereira",
     role: "Designer Digital UFCA",
     foto: "./professores/felipe.jpeg",
   },
+<<<<<<< HEAD
     {
     name: "Suellen ",
     role: "Jornalista UFCA",
     foto: "./professores/suellen.jpeg",
   },
+=======
+>>>>>>> origin/main
 ]
 
 const partners = [

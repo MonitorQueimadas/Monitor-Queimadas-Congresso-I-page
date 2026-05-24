@@ -12,26 +12,44 @@ type ScheduleItem = {
 
 const morningSchedule: ScheduleItem[] = [
   {
+<<<<<<< HEAD
     time: "08h00–10h00",
+=======
+    time: "08h–10h",
+>>>>>>> origin/main
     title: "Credenciamento",
     type: "credenciamento",
   },
   {
+<<<<<<< HEAD
     time: "10h30–11h00",
+=======
+    time: "10h30–11h",
+>>>>>>> origin/main
     title: "Acolhida",
     type: "acolhida",
   },
   {
+<<<<<<< HEAD
     time: "11h00–11h40",
     title: "Guardiãs das águas: meninas pelo saneamento",
     description:
       "Apresentação sobre ações de educação ambiental e saneamento, com foco no protagonismo feminino e impactos no território.",
     speaker: "Ana Millene dos Santos Silva • Profa. Dra. Janisi Sales Aragão",
+=======
+    time: "11h–11h40",
+    title: "Painel 01 — Guardiãs das Águas",
+    speaker: "Professora Janisi",
+>>>>>>> origin/main
     type: "painel",
     status: "confirmado",
   },
   {
+<<<<<<< HEAD
     time: "11h40–12h00",
+=======
+    time: "11h40–12h",
+>>>>>>> origin/main
     title: "Perguntas e interação",
     type: "interacao",
   },
@@ -39,11 +57,19 @@ const morningSchedule: ScheduleItem[] = [
 
 const afternoonSchedule: ScheduleItem[] = [
   {
+<<<<<<< HEAD
     time: "14h00–14h30",
     title: "ICMBIO",
     description: "Apresentação institucional com contribuições para conservação e gestão territorial na Chapada do Araripe.",
     type: "painel",
     status: "confirmado",
+=======
+    time: "14h–14h30",
+    title: "Painel 02",
+    description: "Proposta para ICMBIO ou Promotor de Justiça",
+    type: "painel",
+    status: "a-confirmar",
+>>>>>>> origin/main
   },
   {
     time: "14h30–14h45",
@@ -52,10 +78,15 @@ const afternoonSchedule: ScheduleItem[] = [
   },
   {
     time: "14h45–15h15",
+<<<<<<< HEAD
     title: "Movimento Salve a Chapada",
     description:
       "Discussão sobre monitoramento territorial e climático da Chapada do Araripe, geotecnologias aplicadas e mobilização social no território.",
     speaker: "Basílio Silva Neto • Victor Arraes",
+=======
+    title: "Painel 03 — Movimento Salve a Chapada",
+    speaker: "Professor Basílio",
+>>>>>>> origin/main
     type: "painel",
     status: "confirmado",
   },
@@ -65,11 +96,22 @@ const afternoonSchedule: ScheduleItem[] = [
     type: "interacao",
   },
   {
+<<<<<<< HEAD
     time: "16h00–16h30",
     title: "Monitoramento da Chapada do Araripe com IA",
     description:
       "Apresentação sobre uso de inteligência artificial e dados para monitoramento ambiental da Chapada do Araripe.",
     speaker: "Prof. Dr. Fabrício Freitas • Prof. Francisco Ferreira",
+=======
+    time: "15h30–16h",
+    title: "Intervalo",
+    type: "intervalo",
+  },
+  {
+    time: "16h–16h30",
+    title: "Painel 04 — Tecnologias e Inteligência Artificial",
+    description: "Monitoramento da Chapada do Araripe, plataforma de cursos e Proex. Participação: Interset-CE",
+>>>>>>> origin/main
     type: "painel",
     status: "confirmado",
   },
@@ -81,11 +123,19 @@ const afternoonSchedule: ScheduleItem[] = [
   {
     time: "16h45–17h45",
     title: "III Mesa com Café e Tecnologia",
+<<<<<<< HEAD
     description: "Mesa de diálogo com convidados e público sobre tecnologia, território e meio ambiente.",
     type: "mesa",
   },
   {
     time: "17h45–18h00",
+=======
+    description: "Especialistas, ICMBIO e demais convidados dos painéis",
+    type: "mesa",
+  },
+  {
+    time: "17h45–18h",
+>>>>>>> origin/main
     title: "Encerramento",
     type: "encerramento",
   },
@@ -213,7 +263,11 @@ export function Schedule() {
             Programação
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
+<<<<<<< HEAD
             11 de junho de 2026 — Auditório Kariris, IFCE Juazeiro do Norte
+=======
+            11 de junho de 2025 — Auditório Kariris, IFCE Juazeiro do Norte
+>>>>>>> origin/main
           </p>
         </div>
 

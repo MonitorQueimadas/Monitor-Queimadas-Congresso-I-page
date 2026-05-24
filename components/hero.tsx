@@ -185,7 +185,11 @@ export function Hero() {
               size="lg" 
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-10 py-7 text-lg font-semibold rounded-xl shadow-lg shadow-secondary/25 transition-all hover:shadow-xl hover:shadow-secondary/30 hover:-translate-y-0.5"
             >
+<<<<<<< HEAD
               <Link href={'https://www.even3.com.br/1-congresso-conecta-chapada-do-araripe-737737/'} target="_blank">
+=======
+              <Link href="#inscricao">
+>>>>>>> origin/main
                 Fazer inscrição gratuita
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
