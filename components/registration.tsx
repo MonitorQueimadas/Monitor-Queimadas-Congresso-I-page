@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Calendar, Clock, MapPin, ArrowRight, Leaf, Cpu, Users } from "lucide-react"
 
 // PLACEHOLDER - Substitua pelo link real de inscrição
-const REGISTRATION_LINK = "#LINK_DE_INSCRICAO_AQUI"
+const REGISTRATION_LINK = "https://www.even3.com.br/1-congresso-conecta-chapada-do-araripe-737737/"
 
 export function Registration() {
   return (
