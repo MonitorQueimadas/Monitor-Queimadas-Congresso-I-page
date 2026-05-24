@@ -39,7 +39,7 @@ const organizers = [
     foto: "./professores/felipe.jpeg",
   },
     {
-    name: "Suellen ",
+    name: "Suelem Albuquerque ",
     role: "Graduanda - UFCA",
     foto: "./professores/suellen.jpeg",
   },

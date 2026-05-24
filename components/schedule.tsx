@@ -1,11 +1,13 @@
 import { Badge } from "@/components/ui/badge"
 import { Mic, Users, Coffee, MessageCircle, Award } from "lucide-react"
+import Image from "next/image"
 
 type ScheduleItem = {
   time: string
   title: string
   description?: string
   speaker?: string
+  speakerPhotos?: string[]
   type: "credenciamento" | "acolhida" | "painel" | "intervalo" | "mesa" | "encerramento" | "interacao"
   status?: "confirmado" | "a-confirmar"
 }
@@ -27,6 +29,7 @@ const morningSchedule: ScheduleItem[] = [
     description:
       "Apresentação sobre ações de educação ambiental e saneamento, com foco no protagonismo feminino e impactos no território.",
     speaker: "Ana Millene dos Santos Silva • Profa. Dra. Janisi Sales Aragão",
+    speakerPhotos: ["/professores/milene.jpeg", "/professores/janisi.jpeg"],
     type: "painel",
     status: "confirmado",
   },
@@ -56,6 +59,7 @@ const afternoonSchedule: ScheduleItem[] = [
     description:
       "Discussão sobre monitoramento territorial e climático da Chapada do Araripe, geotecnologias aplicadas e mobilização social no território.",
     speaker: "Basílio Silva Neto • Victor Arraes",
+    speakerPhotos: ["/professores/basilio.jpeg", "/professores/victor.jpeg"],
     type: "painel",
     status: "confirmado",
   },
@@ -70,6 +74,7 @@ const afternoonSchedule: ScheduleItem[] = [
     description:
       "Apresentação sobre uso de inteligência artificial e dados para monitoramento ambiental da Chapada do Araripe.",
     speaker: "Prof. Dr. Fabrício Freitas • Prof. Francisco Ferreira",
+    speakerPhotos: ["/professores/fabricio.jpeg", "/professores/francisco.jpeg"],
     type: "painel",
     status: "confirmado",
   },
@@ -147,10 +152,25 @@ function TimelineItem({ item, isLast }: { item: ScheduleItem; isLast: boolean })
           
           {/* Speaker */}
           {item.speaker && (
-            <p className="text-sm font-medium text-primary mt-2 flex items-center gap-1.5">
+            <div className="text-sm font-medium text-primary mt-2 flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-              {item.speaker}
-            </p>
+              {item.speakerPhotos && item.speakerPhotos.length > 0 && (
+                <div className="flex -space-x-2">
+                  {item.speakerPhotos.map((photo, index) => (
+                    <div key={`${photo}-${index}`} className="w-9 h-9 rounded-full border-2 border-background overflow-hidden bg-muted">
+                      <Image
+                        src={photo}
+                        alt={`Foto do(a) palestrante ${index + 1}`}
+                        width={36}
+                        height={36}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
+              <span>{item.speaker}</span>
+            </div>
           )}
         </div>
       </div>
