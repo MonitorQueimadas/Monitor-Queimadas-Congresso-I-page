@@ -19,10 +19,13 @@ const morningSchedule: ScheduleItem[] = [
     type: "credenciamento",
   },
   {
-    time: "10h30–11h00",
-    title: "Acolhida",
+  time: "10h30–11h00",
+  title: "Acolhida",
+  description:
+    "Momento de recepção e integração do público, conduzido pelo grupo KARIRI SAX. O concerto convida os participantes a mergulhar na riqueza da música brasileira por meio de arranjos e composições especialmente escritos para quarteto de saxofones, transitando por diferentes expressões da música popular e evidenciando a profundidade técnica, estética e cultural da produção musical brasileira.",
+  speaker: "KARIRI SAX ",
     type: "acolhida",
-  },
+},
   {
     time: "11h00–11h40",
     title: "Guardiãs das águas: meninas pelo saneamento",
@@ -157,12 +160,12 @@ function TimelineItem({ item, isLast }: { item: ScheduleItem; isLast: boolean })
               {item.speakerPhotos && item.speakerPhotos.length > 0 && (
                 <div className="flex -space-x-2">
                   {item.speakerPhotos.map((photo, index) => (
-                    <div key={`${photo}-${index}`} className="w-9 h-9 rounded-full border-2 border-background overflow-hidden bg-muted">
+                    <div key={`${photo}-${index}`} className="w-20 h-20 md:w-35 md:h-35 rounded-full border-2 border-background overflow-hidden bg-muted">
                       <Image
                         src={photo}
                         alt={`Foto do(a) palestrante ${index + 1}`}
-                        width={36}
-                        height={36}
+                        width={46}
+                        height={46}
                         className="w-full h-full object-cover"
                       />
                     </div>
