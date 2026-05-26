@@ -13,15 +13,21 @@ const organizers = [
     role: "Engenheira de Pesca/ Docente IFCE campus Juazeiro do Norte",
     foto: "./professores/janisi.jpeg",
   },
-  {
-    name: "Victor Arraes ",
-    role: " Pesquisador do Observatório da Chapada do Araripe",
-    foto: "./professores/victor.jpeg",
-  },
+  
   {
     name: "Prof. Dr. Basílio Silva Neto",
     role: "Docente IFCE campus Juazeiro do Norte",
     foto: "./professores/basilio.jpeg",
+  },
+   {
+    name: "Carlos Augusto de Alencar Pinheiro",
+    role: " Servidor Público Federal - Analista Ambiental - Gestor de Unidade de Conservação",
+    foto: "./professores/icmbio.jpeg",
+  },
+  {
+    name: "Victor Arraes ",
+    role: " Pesquisador do Observatório da Chapada do Araripe",
+    foto: "./professores/victor.jpeg",
   },
   {
     name: "Ana Millene dos Santos Silva",
