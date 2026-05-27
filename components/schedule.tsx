@@ -92,7 +92,7 @@ const afternoonSchedule: ScheduleItem[] = [
     time: "16h45–17h45",
     title: "III Mesa com Café e Tecnologia",
     speaker: "Prof. Dr. Fabrício Freitas • Basílio Silva Neto • Victor Arraes • Carlos Augusto de Alencar Pinheiro • Profa. Dra. Janisi Sales Aragão",
-    speakerPhotos: ["/professores/Fabricio.jpeg","/professores/basilio.jpeg", "/professores/victor.jpeg", "/professores/icmbio.jpeg", "/professores/janisi.jpeg"],
+    speakerPhotos: ["/professores/fabricio.jpeg","/professores/basilio.jpeg", "/professores/victor.jpeg", "/professores/icmbio.jpeg", "/professores/janisi.jpeg"],
     description: "Mesa de diálogo com convidados e público sobre tecnologia, território e meio ambiente.",
     type: "painel",
   },
