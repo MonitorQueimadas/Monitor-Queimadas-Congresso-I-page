@@ -19,7 +19,32 @@ const organizers = [
     role: "Docente IFCE campus Juazeiro do Norte",
     foto: "./professores/basilio.jpeg",
   },
+    {
+    name: "Prof. Dr. Francisco Ferreira ",
+    role: "Universidade Federal do Cariri UFCA",
+    foto: "./professores/francisco.jpeg",
+  },
    {
+    name: "Osvaldo Soares",
+    role: "Mestrando em Ciência da Computação IFCE campus Fortaleza",
+    foto: "./professores/osvaldo.jpg",
+  },
+   {
+    name: "Pedro Hugo",
+    role: "Graduando em Ciência da Computação - UFCA",
+    foto: "./professores/hugo.jpg",
+  },
+  {
+    name: "Felipe Pereira",
+    role: "Graduando Universidade em Federal do Cariri UFCA",
+    foto: "./professores/felipe.jpeg",
+  },
+    {
+    name: "Suelem Albuquerque ",
+      role: "Graduanda Universidade em Federal do Cariri UFCA",
+    foto: "./professores/suellen.jpeg",
+  },
+  /*{
     name: "Carlos Augusto de Alencar Pinheiro",
     role: " Servidor Público Federal - Analista Ambiental - Gestor de Unidade de Conservação",
     foto: "./professores/icmbio.jpeg",
@@ -33,22 +58,7 @@ const organizers = [
     name: "Ana Millene dos Santos Silva",
     role: "Mestranda em meio ambiente",
     foto: "./professores/milene.jpeg",
-  },
-    {
-    name: "Prof. Dr. Francisco Ferreira ",
-    role: "Universidade Federal do Cariri UFCA",
-    foto: "./professores/francisco.jpeg",
-  },
-  {
-    name: "Felipe Pereira",
-    role: "Graduando Universidade em Federal do Cariri UFCA",
-    foto: "./professores/felipe.jpeg",
-  },
-    {
-    name: "Suelem Albuquerque ",
-      role: "Graduanda Universidade em Federal do Cariri UFCA",
-    foto: "./professores/suellen.jpeg",
-  },
+  },*/
 ]
 
 const partners = [
