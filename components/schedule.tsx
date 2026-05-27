@@ -48,6 +48,8 @@ const afternoonSchedule: ScheduleItem[] = [
     time: "14h00–14h30",
     title: "ICMBIO",
     description: "Apresentação institucional com contribuições para conservação e gestão territorial na Chapada do Araripe.",
+    speaker: "Carlos Augusto de Alencar Pinheiro • Prof. Dr. Fabrício Freitas",
+    speakerPhotos: ["/professores/icmbio.jpeg", "/professores/fabricio.jpeg"],
     type: "painel",
     status: "confirmado",
   },
@@ -89,8 +91,10 @@ const afternoonSchedule: ScheduleItem[] = [
   {
     time: "16h45–17h45",
     title: "III Mesa com Café e Tecnologia",
+    speaker: "Prof. Dr. Fabrício Freitas • Basílio Silva Neto • Victor Arraes • Carlos Augusto de Alencar Pinheiro • Profa. Dra. Janisi Sales Aragão",
+    speakerPhotos: ["/professores/Fabricio.jpeg","/professores/basilio.jpeg", "/professores/victor.jpeg", "/professores/icmbio.jpeg", "/professores/janisi.jpeg"],
     description: "Mesa de diálogo com convidados e público sobre tecnologia, território e meio ambiente.",
-    type: "mesa",
+    type: "painel",
   },
   {
     time: "17h45–18h00",
@@ -153,26 +157,31 @@ function TimelineItem({ item, isLast }: { item: ScheduleItem; isLast: boolean })
             </p>
           )}
           
-          {/* Speaker */}
+{/* Speaker */}
           {item.speaker && (
-            <div className="text-sm font-medium text-primary mt-2 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+            <div className="mt-3">
+              <span className="inline-flex items-center gap-1.5 text-sm font-medium text-primary mb-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                Participantes
+              </span>
               {item.speakerPhotos && item.speakerPhotos.length > 0 && (
                 <div className="flex -space-x-2">
                   {item.speakerPhotos.map((photo, index) => (
-                    <div key={`${photo}-${index}`} className="w-20 h-20 md:w-35 md:h-35 rounded-full border-2 border-background overflow-hidden bg-muted">
-                      <Image
-                        src={photo}
-                        alt={`Foto do(a) palestrante ${index + 1}`}
-                        width={46}
-                        height={46}
-                        className="w-full h-full object-cover"
-                      />
+                    <div key={`${photo}-${index}`} className="flex flex-col items-center gap-1">
+                      <div className="w-20 h-20 md:w-35 md:h-35 rounded-full border-2 border-background overflow-hidden bg-muted">
+                        <Image
+                          src={photo}
+                          alt={`Foto do(a) participante ${index + 1}`}
+                          width={56}
+                          height={56}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                     </div>
                   ))}
                 </div>
               )}
-              <span>{item.speaker}</span>
+              <p className="text-sm font-medium text-primary mt-2">{item.speaker}</p>
             </div>
           )}
         </div>
